@@ -11,9 +11,9 @@ class Discount {
   
       cart.items.forEach(item => {
         if (item.product.category === 'Fashion' && item.quantity >= 2) {
-          totalDiscount += item.product.price * Math.floor(item.quantity / 2); // Buy 1 Get 1 Free
+          totalDiscount += item.product.price * Math.floor(item.quantity / 2); 
         } else if (item.product.category === 'Electronics') {
-          totalDiscount += (item.product.price * item.quantity) * 0.1; // 10% Off on Electronics
+          totalDiscount += (item.product.price * item.quantity) * 0.1; 
         }
       });
   

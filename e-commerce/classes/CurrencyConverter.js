@@ -5,7 +5,7 @@ class CurrencyConverter {
         GBP: 0.75
       };
   
-      return amount * (rates[currency] || 1); // Fallback to USD if currency is not supported
+      return amount * (rates[currency] || 1);
     }
   }
   
